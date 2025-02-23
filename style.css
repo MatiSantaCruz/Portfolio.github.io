@@ -1,98 +1,70 @@
-/* Estilos generales */
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-/* Estilos del encabezado */
 header {
-    background-color: #f8f9fa;
-    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
 }
 
-.navbar-brand {
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 0.5rem;
     font-size: 1.5rem;
-    font-weight: bold;
 }
 
-/* Estilos de la sección de héroe */
-.hero {
-    background-image: url("https://www.dataworks.com.ar/images/hero.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 100px 0;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-/* Estilos de la sección de servicios */
-.services {
-    padding: 80px 0;
-}
-
-.card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-/* Estilos de la sección de portafolio */
-.portfolio {
-    padding: 80px 0;
-}
-
-.portfolio .card {
-    margin-bottom: 20px;
-}
-
-/* Estilos de la sección de equipo */
-.team {
-    padding: 80px 0;
-}
-
-.team .card {
-    margin-bottom: 20px;
-}
-
-/* Estilos de la sección de contacto */
-.contact {
-    padding: 80px 0;
-}
-
-.contact form {
-    max-width: 600px;
+section {
+    padding: 2rem;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-/* Estilos del pie de página */
+section h2 {
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.experience-item, .achievement-item, .education-item {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 1rem 0;
+    background-color: #ddd;
+    font-size: 0.9rem;
 }
