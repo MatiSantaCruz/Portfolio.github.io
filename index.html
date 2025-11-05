@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Matias Ezequiel Santa Cruz | Data Analyst</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
-<script>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Matias Ezequiel Santa Cruz | Data Analyst</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link href="style.css" rel="stylesheet">
+
+    <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -18,7 +25,7 @@
                         "background-dark": "#101c22",
                     },
                     fontFamily: {
-                        "display": ["Manrope", "sans-serif"]
+                        "display": ["Manrope", "sans-serif"] // Se usa la versión con fallback
                     },
                     borderRadius: {
                         "DEFAULT": "0.25rem",
@@ -30,258 +37,283 @@
             },
         }
     </script>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
+    
+</head>
+
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
-<main class="relative min-h-screen flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJKg3qqT-euAlgzXD_cacxJJshwqWNAADNrs-xUsupvqIqj03PqnvOjvW3Tfp56S8FpN5KvyOq9xr1tAxYx3u0SgHT_iDqfizSU0iyeV_-M8Nl1Wzbo05cm1QF5tIMdnaoyh5IcsAbWPBP1amBj1DT1tVSdDmiT9b8ZbZbK6hNmuU9iAEQqgK8OYGlBStDHmibbfFz-dZuJge2_Cf82nHpPZyOMy38ElXmuliD0pYCry9DLMh4islbkVU3DBMf-uh0uYIxVQO2_dhs");'></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-black/10"></div>
-</div>
-<div class="relative z-10 mx-auto max-w-4xl p-6 text-white text-center">
-<div class="flex flex-col items-center gap-6">
-<h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-                    Matias Ezequiel Santa Cruz: <span class="text-primary">Analista de Datos</span>
-<span class="block text-3xl md:text-5xl font-bold mt-2">Convierto Datos en Decisiones Rentables</span>
-</h1>
-<p class="max-w-3xl text-base md:text-lg text-gray-200 dark:text-gray-300">
-                    Hola, soy Matias. Combino más de 5 años de experiencia en administración y finanzas con un profundo conocimiento en análisis de datos para ayudar a las empresas a optimizar sus procesos, reducir costos y descubrir nuevas oportunidades de crecimiento. No solo analizo números; entiendo el negocio detrás de ellos.
+    <main class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJKg3qqT-euAlgzXD_cacxJJshwqWNAADNrs-xUsupvqIqj03PqnvOjvW3Tfp56S8FpN5KvyOq9xr1tAxYx3u0SgHT_iDqfizSU0iyeV_-M8Nl1Wzbo05cm1QF5tIMdnaoyh5IcsAbWPBP1amBj1DT1tVSdDmiT9b8ZbZbK6hNmuU9iAEQqgK8OYGlBStDHmibbfFz-dZuJge2_Cf82nHpPZyOMy38ElXmuliD0pYCry9DLMh4islbkVU3DBMf-uh0uYIxVQO2_dhs");'></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-black/10"></div>
+        </div>
+
+        <div class="relative z-10 mx-auto max-w-4xl p-6 text-white text-center">
+            <div class="flex flex-col items-center gap-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+                    Matias Ezequiel Santa Cruz <span class="text-primary"></span>
+                    <span class="block text-3xl md:text-5xl font-bold mt-2"></span>
+                </h1>
+                <p class="max-w-3xl text-base md:text-lg text-gray-200 dark:text-gray-300">
+                    Data Analyst | Business Intelligence | Data Visualization
                 </p>
-<a class="inline-block bg-primary text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-primary/90 transition-colors duration-300" href="./contact_section.html">
-                    Hablemos de tu proyecto
+                <div class="flex space-x-4">
+                    <a class="bg-primary text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-primary/90 transition-colors duration-300" href="./contact_section.html">
+                        Hablemos de tu Proyecto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+          <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-4">
+              <h1
+                class="text-[#0d171b] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+              >
+                Estudio de caso destacado
+              </h1>
+              <p class="text-[#0d171b] text-base font-normal leading-normal max-w-[720px]">
+                Descubre mi último proyecto: «Análisis de datos de bicicletas compartidas en R Studio». Este estudio de caso demuestra mi dominio de R Studio para analizar y visualizar conjuntos de datos complejos, proporcionando información práctica para la toma de decisiones empresariales.
+              </p>
+            </div>
+            <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1193d4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
+            href="./Informe-R-Markdown.html">
+              <span class="truncate">Lea el informe completo</span>
+          </a>
+          </div>
+
+        </div>
+    </section>
+    <section>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+          <div class="flex flex-col gap-4">
+            <h1
+              class="text-[#0d171b] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+            >
+              Portafolio
+            </h1>
+            <p class="text-[#0d171b] text-base font-normal leading-normal max-w-[720px]">Explora una selección de mis proyectos de análisis de datos, que muestran mis habilidades y experiencia.</p>
+          </div>
+          <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3">
+            <div class="flex flex-col gap-3 pb-3">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                style='background-image: url("./proyecto-1.png");'
+              ></div>
+              <div>
+                <p class="text-[#0d171b] text-base font-medium leading-normal">Projecto 1</p>
+                <a class="text-[#4c809a] text-sm font-normal leading-normal" href="./proyecto-1.html">Análisis de bicicletas compartidas de Cyclistic utilizando R Studio.</a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 pb-3">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAse77VI5ObVbfEoDQiFWgp2ipAIO1j9nFjdkQnTZSeBUwEcrhcSli7ngeBwN-wYSNsM_DnxHOLaH093gmu_Zs0WAAbBHaHQOiBQqArdAge0NQotU83GpEXMImbv8nKm-whhh5Q9YT92n9r66z9kcm3_XnENaZjrZ4sc-4NYAF1hnbVekucrkH8YX6nPHfm2ruA8U-uL6rl81xXqSGEqDiYocx8NHhBGSjTSD4qy6PlMylidzBS-r4NokkGKddPBxXYXnN0vZpbHawG");'
+              ></div>
+              <div>
+                <p class="text-[#0d171b] text-base font-medium leading-normal">Project 2</p>
+                <p class="text-[#4c809a] text-sm font-normal leading-normal">Brief description of Project 2.</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 pb-3">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD8v_QlZ2aJYwZWngR-5R9rQ9vKkyu7XYmg93rvy8wzmiEe7Cv3XP1T2l6oMCt6I2MSaWGeNP2_dm0iNboCLfRnHdkpeaEJVWpId9EZpUB8Kh-JRwiCg5AFPCQyGvzwzYZL-bD0g1_heM7lgnmHYO9_wSgW5LUeyK9ARRE_cfxkACFEfoQLvnHko8Ux0DQFG42b43xrVUGk4f2PNXuPjZcVjDkTwYcK9H23UKMrvmnobbgNxb5jkNn6YxRurSv9HVxpwF36B0f0Ox1N");'
+              ></div>
+              <div>
+                <p class="text-[#0d171b] text-base font-medium leading-normal">Project 3</p>
+                <p class="text-[#4c809a] text-sm font-normal leading-normal">Brief description of Project 3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="relative text-center text-white py-20 px-4 flex flex-col items-center justify-center min-h-[50vh] bg-cover bg-center" style='background-image: linear-gradient(rgba(16, 28, 34, 0.7) 0%, rgba(16, 28, 34, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5KdrvIFNOhPemoZQlkIar9gCpyi-CbGgf7zreIJxFbhuQLFoxqwA4QPoNHxTf-RxcKsJvYU_pCt0w1TtVRe1H0NL80xZHYBAplxDoC3jsP09Vd318ustOHx0PuWr9oaMSAkEEggVPe96vLdSaFw72ah15HfDdGPEZ2gM48GXcQ4DqsxxdxB4pMUkLv0N8Ce3UObrzIe2tBevmwrAGQ_cAY_Xl5_XBrZZ1qCiYVjrwlSGqiDexUO7ys1a6uWDBmHeVvFczNC8_cwbU");'>
+        <div class="max-w-4xl mx-auto flex flex-col gap-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Mi Metodología de Trabajo</h1>
+            <p class="text-lg md:text-xl text-white/80">Un Proceso Claro Orientado a Resultados</p>
+        </div>
+    </section>
+    
+    <section class="py-16 sm:py-24 px-4 bg-background-light dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="flex flex-col gap-4 p-6 rounded-lg bg-background-light dark:bg-background-dark shadow-lg border border-primary/20">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full text-primary">
+                            <span class="material-symbols-outlined text-3xl">search</span>
+                        </div>
+                        <span class="text-2xl font-bold text-primary dark:text-primary">01</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Diagnóstico y Entendimiento</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Comenzamos por comprender a fondo tus necesidades y objetivos, realizando un análisis exhaustivo de tus datos y procesos actuales para identificar áreas de mejora.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 p-6 rounded-lg bg-background-light dark:bg-background-dark shadow-lg border border-primary/20">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full text-primary">
+                            <span class="material-symbols-outlined text-3xl">design_services</span>
+                        </div>
+                        <span class="text-2xl font-bold text-primary dark:text-primary">02</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Diseño de la Solución</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Con base en el diagnóstico, diseñamos una solución a medida, seleccionando las herramientas y técnicas más adecuadas para abordar tus desafíos específicos.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 p-6 rounded-lg bg-background-light dark:bg-background-dark shadow-lg border border-primary/20">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full text-primary">
+                            <span class="material-symbols-outlined text-3xl">settings_suggest</span>
+                        </div>
+                        <span class="text-2xl font-bold text-primary dark:text-primary">03</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Implementación y Análisis</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Implementamos la solución diseñada, realizando un análisis riguroso de los datos para generar insights valiosos y recomendaciones accionables.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 p-6 rounded-lg bg-background-light dark:bg-background-dark shadow-lg border border-primary/20">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full text-primary">
+                            <span class="material-symbols-outlined text-3xl">monitoring</span>
+                        </div>
+                        <span class="text-2xl font-bold text-primary dark:text-primary">04</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Entrega y Seguimiento</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Presentamos los resultados de manera clara y concisa, asegurando que comprendas las implicaciones y los pasos a seguir. Ofrecemos seguimiento continuo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="w-full min-h-screen"> <div class="p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-background-dark dark:text-background-light mb-8 text-center">Mi Experiencia en Números</h2>
+                <div class="space-y-8">
+                    <div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-md border border-background-light dark:border-background-dark/30">
+                        <div class="flex flex-col items-center text-center">
+                            <p class="text-6xl font-extrabold text-primary">+20%</p>
+                            <p class="text-xl font-bold text-background-dark dark:text-background-light mt-2">Aumento de Ingresos Proyectado</p>
+                            <p class="text-sm font-semibold text-primary/80 dark:text-primary/70 mt-1">Ganadera El Porvenir S.A.</p>
+                            <p class="text-background-dark/70 dark:text-background-light/70 mt-4 text-sm">
+                                Implementación de un sistema de análisis de datos para optimizar la gestión de recursos y mejorar la toma de decisiones.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-md border border-background-light dark:border-background-dark/30">
+                        <div class="flex flex-col items-center text-center">
+                            <p class="text-6xl font-extrabold text-primary">+150%</p>
+                            <p class="text-xl font-bold text-background-dark dark:text-background-light mt-2">Aumento de Eficiencia</p>
+                            <p class="text-sm font-semibold text-primary/80 dark:text-primary/70 mt-1">Estudio Integral S.R.L.</p>
+                            <p class="text-background-dark/70 dark:text-background-light/70 mt-4 text-sm">
+                                Desarrollo de un panel de control interactivo para monitorear el rendimiento y optimizar los procesos internos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-md border border-background-light dark:border-background-dark/30">
+                        <div class="flex flex-col items-center text-center">
+                            <p class="text-6xl font-extrabold text-primary">+30%</p>
+                            <p class="text-xl font-bold text-background-dark dark:text-background-light mt-2">Aumento de Productividad</p>
+                            <p class="text-sm font-semibold text-primary/80 dark:text-primary/70 mt-1">Productividad del Equipo</p>
+                            <p class="text-background-dark/70 dark:text-background-light/70 mt-4 text-sm">
+                                Capacitación en herramientas de análisis de datos para mejorar la eficiencia y la calidad del trabajo en equipo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+            <div class="@container">
+          <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+            <div class="flex flex-col gap-2 text-center">
+              <h1
+                class="text-[#0d171b] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+              >
+                Colaboremos
+              </h1>
+              <p class="text-[#0d171b] text-base font-normal leading-normal max-w-[720px">¿Listo para aprovechar los datos para su negocio? Contácteme para hablar sobre su proyecto.</p>
+            </div>
+            <div class="flex flex-1 justify-center">
+              <div class="flex justify-center">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1193d4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
+                >
+                  <span class="truncate">Ponte en contacto</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer class="bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky bottom-0 z-10 border-t border-slate-200 dark:border-slate-800">
+        <nav class="container mx-auto px-4">
+            <div class="flex justify-around h-16">
+                <a class="flex flex-col items-center justify-center gap-1 text-primary dark:text-primary transition-colors rounded-lg bg-primary/10 px-4 nav-link active" href="./index.html">
+                    <span class="material-symbols-outlined !text-2xl">home</span>
+                    <span class="text-xs font-medium">Inicio</span>
                 </a>
-</div>
-</div>
-
-</main>
-
-<section>
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Matias Ezequiel Santa Cruz - Metodología</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#1193d4",
-                        "background-light": "#f6f7f8",
-                        "background-dark": "#101c22",
-                    },
-                    fontFamily: {
-                        "display": ["Manrope"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 24
-        }
-    </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
-<body class="bg-background-light dark:bg-background-dark font-display">
-<main>
-<section class="relative text-center text-white py-20 px-4 flex flex-col items-center justify-center min-h-[50vh] bg-cover bg-center" style='background-image: linear-gradient(rgba(16, 28, 34, 0.7) 0%, rgba(16, 28, 34, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5KdrvIFNOhPemoZQlkIar9gCpyi-CbGgf7zreIJxFbhuQLFoxqwA4QPoNHxTf-RxcKsJvYU_pCt0w1TtVRe1H0NL80xZHYBAplxDoC3jsP09Vd318ustOHx0PuWr9oaMSAkEEggVPe96vLdSaFw72ah15HfDdGPEZ2gM48GXcQ4DqsxxdxB4pMUkLv0N8Ce3UObrzIe2tBevmwrAGQ_cAY_Xl5_XBrZZ1qCiYVjrwlSGqiDexUO7ys1a6uWDBmHeVvFczNC8_cwbU");'>
-<div class="max-w-4xl mx-auto flex flex-col gap-4">
-<h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Mi Metodología de Trabajo</h1>
-<p class="text-lg md:text-xl text-white/80">Un Proceso Claro Orientado a Resultados</p>
-</div>
-</section>
-<section class="py-16 sm:py-24 px-4 bg-background-light dark:bg-background-dark">
-<div class="max-w-7xl mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-<div class="flex flex-col gap-4 p-6 rounded-lg bg-background-light dark:bg-background-dark shadow-lg border border-primary/20">
-<div class="flex items-center gap-4">
-<div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full text-primary">
-<span class="material-symbols-outlined text-3xl">search</span>
-</div>
-<span class="text-2xl font-bold text-primary dark:text-primary">01</span>
-</div>
-<div class="flex flex-col gap-2">
-<h3 class="text-xl font-bold text-gray-900 dark:text-white">Diagnóstico y Entendimiento</h3>
-<p class="text-gray-600 dark:text-gray-400">Comenzamos por comprender a fondo tus necesidades y objetivos, realizando un análisis exhaustivo de tus datos y procesos actuales para identificar áreas de mejora.</p>
-</div>
-</div>
-<div class="flex flex-col gap-4 p-6 rounded-lg bg-background-light dark:bg-background-dark shadow-lg border border-primary/20">
-<div class="flex items-center gap-4">
-<div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full text-primary">
-<span class="material-symbols-outlined text-3xl">design_services</span>
-</div>
-<span class="text-2xl font-bold text-primary dark:text-primary">02</span>
-</div>
-<div class="flex flex-col gap-2">
-<h3 class="text-xl font-bold text-gray-900 dark:text-white">Diseño de la Solución</h3>
-<p class="text-gray-600 dark:text-gray-400">Con base en el diagnóstico, diseñamos una solución a medida, seleccionando las herramientas y técnicas más adecuadas para abordar tus desafíos específicos.</p>
-</div>
-</div>
-<div class="flex flex-col gap-4 p-6 rounded-lg bg-background-light dark:bg-background-dark shadow-lg border border-primary/20">
-<div class="flex items-center gap-4">
-<div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full text-primary">
-<span class="material-symbols-outlined text-3xl">settings_suggest</span>
-</div>
-<span class="text-2xl font-bold text-primary dark:text-primary">03</span>
-</div>
-<div class="flex flex-col gap-2">
-<h3 class="text-xl font-bold text-gray-900 dark:text-white">Implementación y Análisis</h3>
-<p class="text-gray-600 dark:text-gray-400">Implementamos la solución diseñada, realizando un análisis riguroso de los datos para generar insights valiosos y recomendaciones accionables.</p>
-</div>
-</div>
-<div class="flex flex-col gap-4 p-6 rounded-lg bg-background-light dark:bg-background-dark shadow-lg border border-primary/20">
-<div class="flex items-center gap-4">
-<div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full text-primary">
-<span class="material-symbols-outlined text-3xl">monitoring</span>
-</div>
-<span class="text-2xl font-bold text-primary dark:text-primary">04</span>
-</div>
-<div class="flex flex-col gap-2">
-<h3 class="text-xl font-bold text-gray-900 dark:text-white">Entrega y Seguimiento</h3>
-<p class="text-gray-600 dark:text-gray-400">Presentamos los resultados de manera clara y concisa, asegurando que comprendas las implicaciones y los pasos a seguir. Ofrecemos seguimiento continuo.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-
-</body>    
-</section>
-
-<section>
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Matias Ezequiel Santa Cruz - Data Analyst</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#1193d4",
-            "background-light": "#f6f7f8",
-            "background-dark": "#101c22",
-          },
-          fontFamily: {
-            "display": ["Manrope"]
-          },
-          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-        },
-      },
-    }
-  </script>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
-<body class="bg-background-light dark:bg-background-dark font-display">
-<div class="w-full min-h-screen">
-<div class="p-6 md:p-8">
-<h2 class="text-3xl font-bold text-background-dark dark:text-background-light mb-8 text-center">Mi Experiencia en Números</h2>
-<div class="space-y-8">
-<div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-md border border-background-light dark:border-background-dark/30">
-<div class="flex flex-col items-center text-center">
-<p class="text-6xl font-extrabold text-primary">+20%</p>
-<p class="text-xl font-bold text-background-dark dark:text-background-light mt-2">Aumento de Ingresos Proyectado</p>
-<p class="text-sm font-semibold text-primary/80 dark:text-primary/70 mt-1">Ganadera El Porvenir S.A.</p>
-<p class="text-background-dark/70 dark:text-background-light/70 mt-4 text-sm">
-              Implementación de un sistema de análisis de datos para optimizar la gestión de recursos y mejorar la toma de decisiones.
-            </p>
-</div>
-</div>
-<div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-md border border-background-light dark:border-background-dark/30">
-<div class="flex flex-col items-center text-center">
-<p class="text-6xl font-extrabold text-primary">+150%</p>
-<p class="text-xl font-bold text-background-dark dark:text-background-light mt-2">Aumento de Eficiencia</p>
-<p class="text-sm font-semibold text-primary/80 dark:text-primary/70 mt-1">Estudio Integral S.R.L.</p>
-<p class="text-background-dark/70 dark:text-background-light/70 mt-4 text-sm">
-              Desarrollo de un panel de control interactivo para monitorear el rendimiento y optimizar los procesos internos.
-            </p>
-</div>
-</div>
-<div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-md border border-background-light dark:border-background-dark/30">
-<div class="flex flex-col items-center text-center">
-<p class="text-6xl font-extrabold text-primary">+30%</p>
-<p class="text-xl font-bold text-background-dark dark:text-background-light mt-2">Aumento de Productividad</p>
-<p class="text-sm font-semibold text-primary/80 dark:text-primary/70 mt-1">Productividad del Equipo</p>
-<p class="text-background-dark/70 dark:text-background-light/70 mt-4 text-sm">
-              Capacitación en herramientas de análisis de datos para mejorar la eficiencia y la calidad del trabajo en equipo.
-            </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
+                <a class="flex flex-col items-center justify-center gap-1 text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors nav-link" href="./about_me_section.html">
+                    <span class="material-symbols-outlined !text-2xl">person</span>
+                    <span class="text-xs font-medium">Sobre Mí</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors nav-link" href="./services_section.html">
+                    <span class="material-symbols-outlined !text-2xl">work</span>
+                    <span class="text-xs font-medium">Servicios</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors nav-link" href="./contact_section.html">
+                    <span class="material-symbols-outlined !text-2xl">mail</span>
+                    <span class="text-xs font-medium">Contacto</span>
+                </a>
+            </div>
+        </nav>
+        <section class="flex flex-col gap-6 px-5 py-10 text-center @container">
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="#">
+              <div class="text-[#4c809a]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div class="text-[#4c809a]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div class="text-[#4c809a]" data-icon="GithubLogo" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div class="text-[#4c809a]" data-icon="StackOverflowLogo" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M216,152.09V216a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V152.09a8,8,0,0,1,16,0V208H200V152.09a8,8,0,0,1,16,0Zm-128,32h80a8,8,0,1,0,0-16H88a8,8,0,1,0,0,16Zm4.88-53,77.27,20.68a7.89,7.89,0,0,0,2.08.28,8,8,0,0,0,2.07-15.71L97,115.61A8,8,0,1,0,92.88,131Zm18.45-49.93,69.28,40a8,8,0,0,0,10.93-2.93,8,8,0,0,0-2.93-10.91L119.33,67.27a8,8,0,1,0-8,13.84Zm87.33,13A8,8,0,1,0,210,82.84l-56.57-56.5a8,8,0,0,0-11.32,11.3Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <p class="text-[#4c809a] text-base font-normal leading-normal">© 2025 Matias Ezequiel Santa Cruz. Todos los derechos reservados.</p>
+        </section>
+        
+    </footer>
 </body>
-</section>
-
-
-<footer class="bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky bottom-0 z-10 border-t border-slate-200 dark:border-slate-800">
-<nav class="container mx-auto px-4">
-<div class="flex justify-around h-16">
-
-<a class="flex flex-col items-center justify-center gap-1 text-primary dark:text-primary transition-colors rounded-lg bg-primary/10 px-4" href="./index.html">
-<span class="material-symbols-outlined !text-2xl">home</span>
-<span class="text-xs font-medium">Inicio</span>
-</a>
-
-<a class="flex flex-col items-center justify-center gap-1 text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="./about_me_section.html">
-<span class="material-symbols-outlined !text-2xl">person</span>
-<span class="text-xs font-medium">Sobre Mí</span>
-</a>
-
-<a class="flex flex-col items-center justify-center gap-1 text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="./services_section.html">
-<span class="material-symbols-outlined !text-2xl">work</span>
-<span class="text-xs font-medium">Proyectos</span>
-</a>
-
-<a class="flex flex-col items-center justify-center gap-1 text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="./contact_section.html">
-<span class="material-symbols-outlined !text-2xl">mail</span>
-<span class="text-xs font-medium">Contacto</span>
-</a>
-
-</div>
-</nav>
-
-<div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
-<p class="text-base text-gray-500 dark:text-gray-400">© 2025 Matias Ezequiel Santa Cruz. Todos los derechos reservados.</p>
-
-</div>
-</nav>
-</footer>
-</div>
-</body></html>
+</html>

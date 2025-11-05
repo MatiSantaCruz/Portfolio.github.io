@@ -1,0 +1,23 @@
+/* Estilo base del body (de todos tus archivos) */
+body {
+  min-height: max(884px, 100dvh);
+}
+
+/* Estilos de Iconos (Consolidados) */
+.material-symbols-outlined {
+  /* Este es el estilo por defecto (FILL 0) */
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* * Estilo para el enlace de navegación activo.
+ * (Usaremos las clases 'nav-link' y 'active' en el HTML)
+*/
+.nav-link.active .material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Estilos de 'services_section.html' y 'proyecto-1.html' */
+.icon-container {
+  width: 48px;
+  height: 48px;
+}

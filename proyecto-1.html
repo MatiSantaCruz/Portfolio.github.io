@@ -36,34 +36,67 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
 <div class="flex flex-col min-h-screen">
+
 <main class="flex-grow">
 <section class="py-16 px-4 sm:px-6 lg:px-8">
-<div class="max-w-4xl mx-auto text-center">
-<h2 class="text-3xl font-extrabold text-slate-900 dark:text-white sm:text-4xl">¿Cómo puedo ayudarte?</h2>
-<p class="mt-4 text-lg text-slate-600 dark:text-slate-400">Soluciones a la Medida de tu Empresa</p>
+<section class="bg-cover bg-center" style='background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url("./fondo-1.png");'> 
+<div class="px-4 py-20 text-center text-white sm:px-6 lg:px-8 lg:py-24">
+<h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">Proyecto Nº 1</h1>
+<p class="mt-6 max-w-2xl mx-auto text-lg leading-7">Análisis de Datos Cyclistic en R Studio</p>
 </div>
-<div class="mt-12 grid gap-8 md:grid-cols-3">
-<div class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-<div class="icon-container flex items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20 text-primary">
-<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176ZM104,120v24a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32-16v40a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32-16v56a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"></path></svg>
+</section>
+<div>
+  <p class="mt-6 max-w-2xl text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Este estudio de caso detalla el proceso de análisis de datos realizado para Cyclistic utilizando R Studio, siguiendo las seis fases del proceso de análisis de datos:
+          Preguntar, Preparar, Procesar, Analizar, Compartir y Actuar.
+        </p>
+        <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">1. Preguntar</h3>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Objetivo: Definir la pregunta clave que guiará el análisis. En este caso, se busca entender cómo los diferentes tipos de usuarios (miembros y casuales) utilizan los
+          servicios de Cyclistic de manera diferente.
+        </p>
+        <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">2. Preparar</h3>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Objetivo: Recopilar y organizar los datos necesarios para el análisis. Esto incluye la carga de datos y la verificación de su integridad.
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">Código: Carga de librerías y datos.</p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">library(tidyverse) library(lubridate) df &lt;- read_csv("cyclistic_data.csv")</p>
+        <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">3. Procesar</h3>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Objetivo: Limpiar y transformar los datos para asegurar su calidad y adecuación para el análisis. Esto puede incluir la conversión de tipos de datos y el filtrado de
+          datos relevantes.
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">Código: Conversión de tipos de datos y filtrado.</p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          df$started_at &lt;- ymd_hms(df$started_at) df$ended_at &lt;- ymd_hms(df$ended_at) df &lt;- df %&gt;% filter(ride_length &gt; 0)
+        </p>
+        <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">4. Analizar</h3>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Objetivo: Aplicar técnicas estadísticas para identificar patrones y relaciones en los datos. Esto puede incluir la agregación de datos y la creación de visualizaciones.
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">Código: Agregación de datos y visualizaciones.</p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          summary_data &lt;- df %&gt;% group_by(member_casual) %&gt;% summarise(avg_ride_length = mean(ride_length)) ggplot(df, aes(x = ride_length, fill = member_casual)) +
+          geom_histogram()
+        </p>
+        <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">5. Compartir</h3>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Objetivo: Comunicar los hallazgos de manera clara y efectiva a las partes interesadas. Esto puede incluir la creación de informes y presentaciones.
+        </p>
+        <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">6. Actuar</h3>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Objetivo: Utilizar los insights obtenidos para tomar decisiones informadas y generar valor. En este caso, los resultados pueden ayudar a Cyclistic a optimizar sus
+          servicios para diferentes tipos de usuarios.
+        </p>
 </div>
-<h3 class="mt-5 text-lg font-bold text-slate-900 dark:text-white">Business Intelligence y Reporting Interactivo</h3>
-<p class="mt-2 text-base text-slate-600 dark:text-slate-400">Transforma tus datos en información valiosa con dashboards interactivos y reportes personalizados. Visualiza tendencias, identifica oportunidades y toma decisiones informadas.</p>
-</div>
-<div class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-<div class="icon-container flex items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20 text-primary">
-<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M215.8,122.16a8,8,0,0,0-7.06-1.48L190.1,123a73.9,73.9,0,0,0-8.68,0l-18.64-2.33a8,8,0,0,0-5.48,1.75l-14.19,11.35a91.81,91.81,0,0,0-15-6.23l2.51-22.58a8,8,0,0,0-2.64-5.1A74.45,74.45,0,0,0,113,88.24a8,8,0,0,0-5.1,2.64L96.53,105a8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,0-15-6.23l11.35-14.19a8,8,0,0,0,1.74-5.48,73.9,73.9,0,0,0,0-8.68L87,90.1a8,8,0,0,0-1.48-7.06L70.6,64.4a8,8,0,0,0-7.06-1.49,107.21,107.21,0,0,0-26.25,10.88,8,8,0,0,0-3.93,6l-2.64,23.72q-1.56,1.48-3,3L40.54,125a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06l14.92,18.64q.06,2.16,0,4.32l-14.92,18.64a8,8,0,0,0-1.49,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,247.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49l18.64-14.92q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3l23.78-2.64a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06L216,162.16q0-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.49-7.06,107.21,107.21,0,0,0-10.88-26.25A8,8,0,0,0,215.8,122.16ZM128,176a48,48,0,1,1,48-48A48.05,48.05,0,0,1,128,176Z"></path></svg>
-</div>
-<h3 class="mt-5 text-lg font-bold text-slate-900 dark:text-white">Optimización y Automatización de Procesos</h3>
-<p class="mt-2 text-base text-slate-600 dark:text-slate-400">Automatiza tareas repetitivas y optimiza flujos de trabajo para aumentar la eficiencia y reducir costos. Libera tiempo para enfocarte en lo que realmente importa.</p>
-</div>
-<div class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-<div class="icon-container flex items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20 text-primary">
-<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm48-88.65a8,8,0,0,1-10.75-2.07A48.11,48.11,0,0,0,128,96h-8V80a8,8,0,0,1,16,0v8h8a32,32,0,0,1,30.34,22.09A8,8,0,0,1,176,127.35ZM128,160a48.05,48.05,0,0,0,48-48,8,8,0,0,1,16,0,64,64,0,0,1-64,64h-8v16a8,8,0,0,1-16,0V184h-8a48,48,0,0,1,0-96h8v16a8,8,0,0,1-16,0V96a8,8,0,0,1,16,0v8a32,32,0,0,1,0,64h16v-8a8,8,0,0,1,8-8A32,32,0,0,0,128,128a8,8,0,0,1,0-16,48.05,48.05,0,0,1,48,48,8,8,0,0,1-16,0,32,32,0,0,0-32-32,8,8,0,0,1-8-8,8,8,0,0,1,8-8h16a32.09,32.09,0,0,0-2.34-12.09A8,8,0,1,1,154.34,94,48.11,48.11,0,0,1,128,144a8,8,0,0,1,0-16,32,32,0,0,0,0-64H112a8,8,0,0,1,0-16h16a48,48,0,0,1,0,96Z"></path></svg>
-</div>
-<h3 class="mt-5 text-lg font-bold text-slate-900 dark:text-white">Análisis de Datos para Estrategia Financiera y Operativa</h3>
-<p class="mt-2 text-base text-slate-600 dark:text-slate-400">Obtén insights profundos sobre tu rendimiento financiero y operativo. Identifica áreas de mejora, optimiza recursos y maximiza la rentabilidad.</p>
-</div>
+<div>
+        <div class="flex px-4 py-3 justify-start">
+          <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1193d4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
+            href="./Informe-R-Markdown.html">
+              <span class="truncate">Informe Final</span>
+          </a>
+        </div>
+        <div class="h-5 bg-slate-50"></div>
 </div>
 </section>
 </main>
