@@ -46,13 +46,17 @@
 </div>
 </section>
 <div>
-  <p class="mt-6 max-w-2xl text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
-          Este estudio de caso detalla el proceso de análisis de datos realizado para Cyclistic utilizando R Studio, siguiendo las seis fases del proceso de análisis de datos:
+        <!-- Introducción -->
+        <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Introducción</h3>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Este análisis corresponde al caso práctico 1 del <a href="https://www.coursera.org/professional-certificates/google-data-analytics?" class="text-primary">Certificado de Análisis de Datos de Google</a> (<a href="https://www.coursera.org/" class="text-primary">Coursera</a>). Se basa en el caso práctico «Sofisticado, claro y pulido: Divvy y la visualización de datos», escrito por Kevin Hartman (disponible aquí: <a href="https://artscience.blog/home/divvy-dataviz-case-study" class="text-primary">https://artscience.blog/home/divvy-dataviz-case-study</a>). Utilizaremos el conjunto de datos de Divvy para este caso práctico. 
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">El objetivo es consolidar los datos descargados de Divvy en un único marco de datos y, a continuación, realizar un análisis sencillo para ayudar a responder a la pregunta clave: <strong>¿De qué maneras diferentes utilizan las bicicletas Divvy los miembros y los usuarios ocasionales?</strong></p>
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Este estudio de caso detallaré el proceso de análisis de datos realizado para Cyclistic utilizando R Studio, siguiendo las seis fases del proceso de análisis de datos:
           <strong>Preguntar</strong>, <strong>Preparar</strong>, <strong>Procesar</strong>, <strong>Analizar</strong>, <strong>Compartir</strong> y <strong>Actuar</strong>.
         </p>
-        <p class="mt-6 max-w-2xl text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
-          Este es un proyecto de fin de certificado que <a href="https://www.coursera.org/" class="font-semibold text-primary">Coursera</a>, de la certificación de <a href="https://www.coursera.org/professional-certificates/google-data-analytics?" class="font-semibold text-primary">Google Data Analytics</a>, lo que me permitió dominar herramientas y técnicas clave.
-        </p>
+
         <!-- Escenario -->
         <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Escenario</h3>
         <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
@@ -60,20 +64,19 @@
         </p>
         <!-- Personajes -->
         <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Personajes y equipos</h3>
-        <ul class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
-                <li>
-                    <strong> ♦ Cyclistic:</strong> Un programa de bicicletas compartidas con más de 5800 bicicletas y 600 estaciones de acoplamiento. Cyclistic se distingue por ofrecer también bicicletas reclinadas, triciclos de mano y bicicletas de carga, lo que hace que el sistema sea más inclusivo para personas con discapacidad y usuarios que no pueden usar una bicicleta convencional de dos ruedas. La mayoría de los usuarios opta por bicicletas tradicionales; aproximadamente el 8 % utiliza las opciones de asistencia. Los usuarios de Cyclistic suelen usar las bicicletas por ocio, pero cerca del 30 % las utiliza para ir al trabajo a diario.
-                </li>
-                <li>
-                    <strong> ♦ Lily Moreno:</strong> La directora de marketing y tu supervisora. Moreno es responsable del desarrollo de campañas e iniciativas para promocionar el programa de bicicletas compartidas. Estas pueden incluir correo electrónico, redes sociales y otros canales.
-                </li>
-                <li>
-                    <strong> ♦ Equipo de análisis de marketing de Cyclistic:</strong> Un equipo de analistas de datos responsables de recopilar, analizar y presentar informes que ayudan a definir la estrategia de marketing de Cyclistic. Te incorporaste a este equipo hace seis meses y has estado aprendiendo sobre la misión y los objetivos comerciales de Cyclistic, así como la forma en que tú, como analista de datos junior, puedes contribuir a alcanzarlos.
-                </li>
-                <li>
-                    <strong> ♦ Equipo directivo de Cyclistic:</strong> Este equipo directivo, conocido por su meticulosidad, decidirá si aprueba el programa de marketing recomendado.
-                </li>
-        </ul>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+            <strong> ♦ Cyclistic:</strong> Un programa de bicicletas compartidas con más de 5800 bicicletas y 600 estaciones de acoplamiento. Cyclistic se distingue por ofrecer también bicicletas reclinadas, triciclos de mano y bicicletas de carga, lo que hace que el sistema sea más inclusivo para personas con discapacidad y usuarios que no pueden usar una bicicleta convencional de dos ruedas. La mayoría de los usuarios opta por bicicletas tradicionales; aproximadamente el 8 % utiliza las opciones de asistencia. Los usuarios de Cyclistic suelen usar las bicicletas por ocio, pero cerca del 30 % las utiliza para ir al trabajo a diario.
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+            <strong> ♦ Lily Moreno:</strong> La directora de marketing y tu supervisora. Moreno es responsable del desarrollo de campañas e iniciativas para promocionar el programa de bicicletas compartidas. Estas pueden incluir correo electrónico, redes sociales y otros canales.
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+            <strong> ♦ Equipo de análisis de marketing de Cyclistic:</strong> Un equipo de analistas de datos responsables de recopilar, analizar y presentar informes que ayudan a definir la estrategia de marketing de Cyclistic. Te incorporaste a este equipo hace seis meses y has estado aprendiendo sobre la misión y los objetivos comerciales de Cyclistic, así como la forma en que tú, como analista de datos junior, puedes contribuir a alcanzarlos.
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+            <strong> ♦ Equipo directivo de Cyclistic:</strong> Este equipo directivo, conocido por su meticulosidad, decidirá si aprueba el programa de marketing recomendado.
+        </p>
+
         <!-- Acerca de la empresa -->
         <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Acerca de la empresa</h3>
         <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
@@ -163,9 +166,7 @@
             <div class="@container">
           <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
             <div class="flex flex-col gap-2 text-center">
-              <h1
-                class="text-[#0d171b] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
-              >
+              <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
                 Colaboremos
               </h1>
               <p class="text-[#0d171b] text-base font-normal leading-normal max-w-[720px">¿Listo para aprovechar los datos para su negocio? Contácteme para hablar sobre su proyecto.</p>
@@ -175,7 +176,7 @@
                 <button
                   class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1193d4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
                 >
-                  <span class="truncate">Ponte en contacto</span>
+                  <a class="truncate" href="./contact_section.html">Ponte en contacto</a>
                 </button>
               </div>
             </div>
