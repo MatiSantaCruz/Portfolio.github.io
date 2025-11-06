@@ -48,8 +48,71 @@
 <div>
   <p class="mt-6 max-w-2xl text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
           Este estudio de caso detalla el proceso de análisis de datos realizado para Cyclistic utilizando R Studio, siguiendo las seis fases del proceso de análisis de datos:
-          Preguntar, Preparar, Procesar, Analizar, Compartir y Actuar.
+          <strong>Preguntar</strong>, <strong>Preparar</strong>, <strong>Procesar</strong>, <strong>Analizar</strong>, <strong>Compartir</strong> y <strong>Actuar</strong>.
         </p>
+        <p class="mt-6 max-w-2xl text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Este es un proyecto de fin de certificado que <a href="https://www.coursera.org/" class="font-semibold text-primary">Coursera</a>, de la certificación de <a href="https://www.coursera.org/professional-certificates/google-data-analytics?" class="font-semibold text-primary">Google Data Analytics</a>, lo que me permitió dominar herramientas y técnicas clave.
+        </p>
+        <!-- Escenario -->
+        <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Escenario</h3>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Soy analista de datos junior en el equipo de análisis de marketing de Cyclistic, una empresa de bicicletas compartidas en Chicago. El director de marketing cree que el éxito futuro de la empresa depende de maximizar el número de membresías anuales. Por lo tanto, mi equipo quiere comprender las diferencias en el uso de las bicicletas Cyclistic entre los usuarios ocasionales y los miembros anuales. A partir de estos datos, mi equipo diseñará una nueva estrategia de marketing para convertir a los usuarios ocasionales en miembros anuales. Pero primero, los ejecutivos de Cyclistic deben aprobar mis recomendaciones, por lo que deben estar respaldadas por datos convincentes y visualizaciones de datos profesionales.
+        </p>
+        <!-- Personajes -->
+        <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Personajes y equipos</h3>
+        <ul class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+                <li>
+                    <strong> ♦ Cyclistic:</strong> Un programa de bicicletas compartidas con más de 5800 bicicletas y 600 estaciones de acoplamiento. Cyclistic se distingue por ofrecer también bicicletas reclinadas, triciclos de mano y bicicletas de carga, lo que hace que el sistema sea más inclusivo para personas con discapacidad y usuarios que no pueden usar una bicicleta convencional de dos ruedas. La mayoría de los usuarios opta por bicicletas tradicionales; aproximadamente el 8 % utiliza las opciones de asistencia. Los usuarios de Cyclistic suelen usar las bicicletas por ocio, pero cerca del 30 % las utiliza para ir al trabajo a diario.
+                </li>
+                <li>
+                    <strong> ♦ Lily Moreno:</strong> La directora de marketing y tu supervisora. Moreno es responsable del desarrollo de campañas e iniciativas para promocionar el programa de bicicletas compartidas. Estas pueden incluir correo electrónico, redes sociales y otros canales.
+                </li>
+                <li>
+                    <strong> ♦ Equipo de análisis de marketing de Cyclistic:</strong> Un equipo de analistas de datos responsables de recopilar, analizar y presentar informes que ayudan a definir la estrategia de marketing de Cyclistic. Te incorporaste a este equipo hace seis meses y has estado aprendiendo sobre la misión y los objetivos comerciales de Cyclistic, así como la forma en que tú, como analista de datos junior, puedes contribuir a alcanzarlos.
+                </li>
+                <li>
+                    <strong> ♦ Equipo directivo de Cyclistic:</strong> Este equipo directivo, conocido por su meticulosidad, decidirá si aprueba el programa de marketing recomendado.
+                </li>
+        </ul>
+        <!-- Acerca de la empresa -->
+        <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Acerca de la empresa</h3>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          En 2016, Cyclistic lanzó con éxito un servicio de bicicletas compartidas. Desde entonces, el programa ha crecido hasta contar con una flota de 5824 bicicletas geolocalizadas y bloqueadas en una red de 692 estaciones en Chicago. Las bicicletas se pueden desbloquear en una estación y devolver en cualquier otra del sistema en cualquier momento.
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Hasta ahora, la estrategia de marketing de Cyclistic se ha basado en generar reconocimiento de marca y atraer a un amplio segmento de consumidores.
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Un enfoque que contribuyó a lograrlo fue la flexibilidad de sus planes de precios: pases individuales, pases diarios y membresías anuales. Los clientes que compran pases individuales o diarios se denominan usuarios ocasionales. Los clientes que adquieren membresías anuales son miembros de Cyclistic.
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Los analistas financieros de Cyclistic han concluido que los miembros anuales son mucho más rentables que los usuarios ocasionales. Si bien la flexibilidad de precios ayuda a Cyclistic a atraer a más clientes, Moreno cree que maximizar el número de miembros anuales será clave para el crecimiento futuro. En lugar de crear una campaña de marketing dirigida a clientes completamente nuevos, Moreno cree que existe una gran oportunidad de convertir a los ciclistas ocasionales en miembros. Señala que los ciclistas ocasionales ya conocen el programa Cyclistic y lo han elegido para sus necesidades de movilidad.
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Moreno se ha fijado un objetivo claro: diseñar estrategias de marketing dirigidas a convertir a los ciclistas ocasionales en miembros anuales. Para ello, el equipo de analistas de marketing necesita comprender mejor las diferencias entre los miembros anuales y los ciclistas ocasionales, por qué estos últimos adquirirían una membresía y cómo los medios digitales podrían influir en sus tácticas de marketing. Moreno y su equipo están interesados ​​en analizar los datos históricos de viajes en bicicleta de Cyclistic para identificar tendencias.
+        </p>
+        <!-- Preguntas -->
+        <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Preguntas claves</h3>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">Tres preguntas guiarán el futuro programa de marketing:</p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          1. ¿Cómo utilizan las bicicletas Cyclistic los socios anuales y los usuarios ocasionales?
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          2. ¿Por qué los usuarios ocasionales comprarían una membresía anual de Cyclistic?
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          3. ¿Cómo puede Cyclistic utilizar los medios digitales para influir en los usuarios ocasionales y convertirlos en socios?
+        </p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Moreno me ha asignado la primera pregunta: ¿Cómo utilizan las bicicletas Cyclistic los socios anuales y los usuarios ocasionales?
+        </p>
+
+        <!-- Entregables -->
+        <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Entregable</h3>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">Un informe final.</p>
+
+        <!-- Descripción de pasos -->
+        <h2 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Proceso de análisis de datos</h2>
         <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">1. Preguntar</h3>
         <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
           Objetivo: Definir la pregunta clave que guiará el análisis. En este caso, se busca entender cómo los diferentes tipos de usuarios (miembros y casuales) utilizan los
@@ -59,26 +122,21 @@
         <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
           Objetivo: Recopilar y organizar los datos necesarios para el análisis. Esto incluye la carga de datos y la verificación de su integridad.
         </p>
-        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">Código: Carga de librerías y datos.</p>
-        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">library(tidyverse) library(lubridate) df &lt;- read_csv("cyclistic_data.csv")</p>
+        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          Utilizaré los datos históricos de viajes de Cyclistic para analizar e identificar tendencias. <a href="https://divvy-tripdata.s3.amazonaws.com/index.html" class="text-primary">Descargué los datos de viajes de Cyclistic aquí</a>. (Nota: Los conjuntos de datos tienen un nombre diferente porque Cyclistic es una empresa ficticia. Motivate International Inc. ha puesto los datos a disposición bajo esta <a href="https://divvybikes.com/data-license-agreement" class="text-primary">licencia</a>).
+        </p>
+
         <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">3. Procesar</h3>
         <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
           Objetivo: Limpiar y transformar los datos para asegurar su calidad y adecuación para el análisis. Esto puede incluir la conversión de tipos de datos y el filtrado de
           datos relevantes.
         </p>
-        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">Código: Conversión de tipos de datos y filtrado.</p>
-        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
-          df$started_at &lt;- ymd_hms(df$started_at) df$ended_at &lt;- ymd_hms(df$ended_at) df &lt;- df %&gt;% filter(ride_length &gt; 0)
-        </p>
+
         <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">4. Analizar</h3>
         <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
           Objetivo: Aplicar técnicas estadísticas para identificar patrones y relaciones en los datos. Esto puede incluir la agregación de datos y la creación de visualizaciones.
         </p>
-        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">Código: Agregación de datos y visualizaciones.</p>
-        <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
-          summary_data &lt;- df %&gt;% group_by(member_casual) %&gt;% summarise(avg_ride_length = mean(ride_length)) ggplot(df, aes(x = ride_length, fill = member_casual)) +
-          geom_histogram()
-        </p>
+
         <h3 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">5. Compartir</h3>
         <p class="text-[#0d171b] text-base font-normal leading-normal pb-3 pt-1 px-4">
           Objetivo: Comunicar los hallazgos de manera clara y efectiva a las partes interesadas. Esto puede incluir la creación de informes y presentaciones.
@@ -100,6 +158,7 @@
 </div>
 </section>
 </main>
+<!-- Contacto -->
 <section>
             <div class="@container">
           <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
@@ -123,7 +182,8 @@
           </div>
         </div>
 </section>
-
+</div>
+<!-- Pié de página -->
 <footer class="bg-background-light dark:bg-background-dark py-8 px-4 sm:px-6 lg:px-8">
 
 
@@ -196,9 +256,6 @@
 </section>
 
 </footer>
-
-</main>
-</div>
 
 </body>
 </html>
